@@ -1,14 +1,12 @@
 .section {
-    transform: translate(-0.001px, 0px);
-    left: 0px;
-    top: 0.001px;
-    margin: 0px;
-    max-width: 14685px;
-    width: 14685px;
-    max-height: 900px;
-    height: 900px;
-    padding: 0px;
-    box-sizing: border-box;
-    position: fixed;
-    border:black 2px solid;
+    height:100vh;
+    width: 100vw;
+    position: relative;
+    &-content-position {
+        position: absolute;
+        width: 100%;
+    }
+}
+.intro {
+    max-width: 400px;
 }

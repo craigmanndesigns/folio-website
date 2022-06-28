@@ -1,5 +1,24 @@
 body {
     overflow-y:scroll;
+    margin:0;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+h1, h2, h3 {
+    font-weight: 700;
+}
+h1 {
+    font-size:5.5rem;
+    margin:.5rem 0;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-weight: 500;
 }
 main {
     overflow:clip;
@@ -17,17 +36,17 @@ main {
     flex-basis: auto;
     overflow: visible;
     box-sizing: border-box;
-    width: 14684px;
-    height: 14144px;
+    // width: 14684px;
+    height: 100vh;
     padding: 0px 0px 13244px;
     border:solid red 1px;
-    .section-wrapper {
+    .pin {
         transform: translate3d(-0.001px, 0px, 0px);
         left: 0px;
         top: 0.001px;
         margin: 0px;
         max-width: 14685px;
-        width: 14685px;
+        // width: 14685px;
         max-height: 900px;
         height: 900px;
         padding: 0px;
@@ -35,5 +54,26 @@ main {
         position: fixed;
         border:solid green 1px;
         display:flex;
+        .section-wrapper {
+            transform: translate(-0.001px, 0px);
+            left: 0px;
+            top: 0.001px;
+            margin: 0px;
+            max-width: 14685px;
+            // width: 14685px;
+            max-height: 900px;
+            height: 900px;
+            padding: 0px;
+            box-sizing: border-box;
+            position: fixed;
+            border:black 2px solid;
+            .section-layout div:only-child {
+                display: flex;
+                flex-direction: row;
+            }
+        }
     }
+}
+.db {
+    display: block!important;
 }
