@@ -1,6 +1,6 @@
 button {
     background-color: #CD463F;
-    color: #FFF;
+    color: #fff;
     font-size: 20px;
     padding: .5rem 1rem;
     border-radius: 0px;
@@ -8,4 +8,31 @@ button {
     border:none;
     text-transform: uppercase;
     line-height: 1.5rem;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: #aa322c;
+    }
+}
+.button {
+    &-tertiary {
+        background: transparent;
+        color: #1b1b1b;
+        font-size: .75rem;
+        &:hover {
+            background: transparent;
+            font-weight: 700;
+        }
+    }
+    &-icon {
+        padding:0.75rem;
+        background:#cd463f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & svg {
+            color:#fff;
+            width: 1rem;
+            height: 1rem;
+        }
+    }
 }

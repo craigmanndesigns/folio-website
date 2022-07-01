@@ -1,4 +1,5 @@
 .section {
+    border:solid 1px #1b1b1b;
     height:100vh;
     width: 100vw;
     position: relative;
@@ -7,6 +8,9 @@
         width: 100%;
     }
 }
-.intro {
+.intro_content {
     max-width: 400px;
+}
+.work_content, .experience_content, .interests_content, .get_in_touch_content {
+    max-width: 480px;
 }

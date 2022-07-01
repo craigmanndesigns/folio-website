@@ -6,6 +6,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+    resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'material icons',
+          'roboto:300,400,500,700',
+        ],
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -47,7 +56,7 @@ module.exports = {
       options: {
         fonts: [
           `rubik`,
-          `source sans pro\:400,500,700` // you can also specify font weights and styles
+          `source sans pro\:400,500,700`,
         ],
         display: 'swap'
       }

@@ -9,24 +9,17 @@ import clsx from 'clsx';
 const Section = ({ blok }) => {
   const { width, height } = useWindowSize();
   const child  = { 'min-width': width, 'min-height': height}
-  const [positionStyle, setPositionStyle] = useState();
   const [sectionId, setSectionId] = useState('');
 
   useEffect(() => {
-    setPositionStyle({
-        top: blok.top + "vh",
-        right: blok.right + "vw",
-      });
     setSectionId(blok.id);
-  }, [])
-  console.log(sectionId)
+  }, []);
 
   return (
-    <div {...storyblokEditable(blok)} key={blok._uid} className={sectionStyles.section} id={blok.id} style={child}>
-        <div className={sectionStyles[`${sectionId}`]}>{blok.id}</div>
-        <div className={clsx(sectionStyles.sectionContentPosition, sectionStyles[`${sectionId}`])} style={positionStyle}>
+    <div {...storyblokEditable(blok)} key={blok._uid} className={clsx(sectionStyles.section)} id={blok.id} style={child}>
+        <div>
             {blok.content.map((blok) => (
-                <StoryblokComponent blok={blok} />
+                <StoryblokComponent blok={blok} props={sectionId} />
             ))}
         </div>
     </div>

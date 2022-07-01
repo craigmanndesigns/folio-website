@@ -11,23 +11,28 @@ const BigText = ({ blok }) => {
  
   function renderTitle () {
       if (blok.style === 'h1') {
-          return (
-              <h1>{blok.text}</h1>
-          )
+        return (
+          <h1>{blok.text}</h1>
+        )
       }
       if (blok.style === 'h2') {
         return (
-            <h1>{blok.text}</h1>
+          <h2>{blok.text}</h2>
         )
       }
       if (blok.style === 'h3') {
         return (
-            <h1>{blok.text}</h1>
+          <h3>{blok.text}</h3>
+        )
+      }
+      if (blok.style === 'h4') {
+        return (
+          <h4>{blok.text}</h4>
         )
       }
       else {
           return (
-              <h4>{blok.text}</h4>
+            <div className={blok.style}>{blok.text}</div>
           )
       }
   }

@@ -1,0 +1,18 @@
+.card {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px, rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+    overflow: hidden;
+    min-width: 275px;
+    width: 304px;
+    &-image {
+        width:100%;
+        min-height: 200px;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    &-content {
+        padding: .5rem;
+    }
+}
