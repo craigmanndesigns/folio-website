@@ -5,7 +5,7 @@ import { StoryblokComponent, storyblokEditable, useStoryblokState } from "gatsby
  
 import Layout from "../components/layout"
 import Menu from "../components/menu"
-import useWindowSize from "../hooks/useWindowSize";
+// import useWindowSize from "../hooks/useWindowSize";
 
 const IndexPage = ({ data }) => {
   let story = data.storyblokEntry

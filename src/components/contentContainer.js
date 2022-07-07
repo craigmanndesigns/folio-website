@@ -7,13 +7,13 @@ import clsx from 'clsx';
 
 const ContentContainer = ({ blok, props }) => {
   const [positionStyle, setPositionStyle] = useState();
-  const [contentClass, setContentClass] = useState('');
+  // const [contentClass, setContentClass] = useState('');
   useEffect(() => {
     setPositionStyle({
         top: blok.top + "vh",
         right: blok.right + "vw",
       });
-      setContentClass(props + "_content");
+      // setContentClass(props + "_content");
   }, [])
   return (
     <div {...storyblokEditable(blok)} key={blok._uid}>

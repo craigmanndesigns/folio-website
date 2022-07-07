@@ -56,7 +56,7 @@ module.exports = {
       options: {
         fonts: [
           `rubik`,
-          `source sans pro\:400,500,700`,
+          `source sans pro:400,500,700`,
         ],
         display: 'swap'
       }
