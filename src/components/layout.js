@@ -11,7 +11,6 @@ import * as buttonStyles from "../components/styles/button.module.scss"
 import Teaser from './Teaser'
 import configuration from '../../gatsby-config'
 import Feature from "./feature"
-import Grid from "./grid"
 import Button from "./button"
 import Section from "./section"
 import BigText from "./bigtext";
@@ -28,7 +27,6 @@ storyblokInit({
   use: [apiPlugin],
   components: {
     teaser: Teaser,
-    grid: Grid,
     feature: Feature,
     button: Button,
     section: Section,

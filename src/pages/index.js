@@ -1,9 +1,10 @@
-import * as React from "react"
+import  React, { useState } from "react"
 import { graphql } from "gatsby"
  
 import { StoryblokComponent, storyblokEditable, useStoryblokState } from "gatsby-source-storyblok"
  
 import Layout from "../components/layout"
+import Menu from "../components/menu"
 import useWindowSize from "../hooks/useWindowSize";
 
 const IndexPage = ({ data }) => {
@@ -11,18 +12,18 @@ const IndexPage = ({ data }) => {
   story = useStoryblokState(story)
  
   const components = story.content.body.map(blok => (<StoryblokComponent blok={blok} key={blok._uid} />))
-  const sectionNav = story.content.section_nav.map(blok => (<StoryblokComponent blok={blok} key={blok._uid} />))
- 
-  const { width, height } = useWindowSize();
-  const windowWidth  = { 'width': width}
+  const [popup, setPopup] = useState(false)
 
   return (
+    <>
     <Layout>
+      <button onClick={() => setPopup(true)} >open</button>
       <div {...storyblokEditable(story.content)}>
         {components}
-        {/* <div className="section-nav" style={windowWidth}>{sectionNav}</div> */}
       </div>
     </Layout>
+    <Menu props={popup} setPopup={setPopup}></Menu>
+    </>
   )
 }
  

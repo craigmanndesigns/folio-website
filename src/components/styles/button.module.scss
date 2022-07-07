@@ -16,19 +16,21 @@ button {
 .button {
     &-tertiary {
         background: transparent;
-        color: #1b1b1b;
+        color: #fff;
         font-size: .75rem;
         &:hover {
             background: transparent;
-            font-weight: 700;
         }
     }
     &-icon {
         padding:0.75rem;
-        background:#cd463f;
+        background: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
+        &:hover {
+            background: transparent;
+        }
         & svg {
             color:#fff;
             width: 1rem;

@@ -2,12 +2,14 @@
     display:flex;
     justify-content: center;
     align-items: stretch;
+    margin: 0 50%;
     &-cards {
         display:flex;
         justify-content: center;
         align-items: stretch;
         padding: 2rem;
         gap: 1.5rem;
+        min-height:33vh;
     }
     &-left-button, &-right-button {
         display: flex;
