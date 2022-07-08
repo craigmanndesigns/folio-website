@@ -17,7 +17,7 @@ const ContentContainer = ({ blok, props }) => {
   }, [])
   return (
     <div {...storyblokEditable(blok)} key={blok._uid}>
-        <div className={clsx(sectionStyles.sectionContentPosition, sectionStyles[`${props + "_content"}`])} style={positionStyle}>
+        <div className={clsx(sectionStyles.sectionContentPosition, sectionStyles[`${props + "_content"}`])} style={positionStyle} id={props + "id"}>
             {blok.content.map((blok) => (
                 <StoryblokComponent blok={blok} />
             ))}

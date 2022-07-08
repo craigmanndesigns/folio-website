@@ -54,9 +54,9 @@ const Layout = ({ children }) => {
           <a href="#interests"><button className={clsx(buttonStyles.buttonTertiary)}>Interests</button></a>
           <a href="#get_in_touch"><button className={clsx(buttonStyles.buttonTertiary)}>Get in touch</button></a>
         </div>
-          <HorizontalScroll>
+          {/* <HorizontalScroll> */}
             <div className="section-layout">{children}</div>
-          </HorizontalScroll>
+          {/* </HorizontalScroll> */}
         </div>
       </div>
     </div>
