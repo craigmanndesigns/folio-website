@@ -1,18 +1,1 @@
-  <svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1461.14 996.77">
-    <defs>
-      <style>
-        .cls-1 {
-          fill: #fff;
-        }
-      </style>
-    </defs>
-    <g id="Layer_2-2">
-      <polygon id="light" class="cls-1" points="212.87 410.82 228.38 414.2 228.38 600.56 1461.14 923 1461.14 996.77 5.04 996.77 5.04 498.34 212.87 410.82" />
-      <g id="window">
-        <polygon id="pane" class="cls-1" points="215.25 91.79 215.25 245.94 138.74 245.04 138.74 59.52 215.25 91.79" />
-        <polygon id="pane-2" class="cls-1" points="124.07 53.2 124.07 244.36 0 243.23 0 0 124.07 53.2" />
-        <polygon id="pane-3" class="cls-1" points="215.25 254.71 215.25 410.6 138.74 443.36 138.74 255.95 215.25 254.71" />
-        <polygon id="pane-4" class="cls-1" points="124.07 256.01 124.07 449.18 0 502.08 0 257.17 124.07 256.01" />
-      </g>
-    </g>
-  </svg>
+<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1464.62 996.77"><defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clippath);}.cls-3{fill:#fff;}</style><clipPath id="clippath"><rect class="cls-1" x="24.62" y="76.77" width="1440" height="900"/></clipPath></defs><g id="Layer_2-2"><g id="window"><polygon id="pane" class="cls-3" points="218.73 91.79 218.73 245.94 142.22 245.04 142.22 59.52 218.73 91.79"/><polygon id="pane-2" class="cls-3" points="127.55 53.2 127.55 244.36 3.48 243.23 3.48 0 127.55 53.2"/><polygon id="pane-3" class="cls-3" points="218.73 254.71 218.73 410.6 142.22 443.36 142.22 255.95 218.73 254.71"/><polygon id="pane-4" class="cls-3" points="127.55 256.01 127.55 449.18 3.48 502.08 3.48 257.17 127.55 256.01"/></g><g class="cls-2"><polygon id="light" class="cls-3" points="216.35 410.82 231.86 414.2 231.86 600.56 1464.62 923 1464.62 996.77 8.52 996.77 8.52 498.34 216.35 410.82"/></g><polygon id="sill" class="cls-3" points="231.86 414.2 7.77 511.52 0 503.56 218.58 410.6 231.86 414.2"/><polygon id="side" class="cls-3" points="231.86 414.2 231.86 83.85 218.58 91.88 218.58 410.6 231.86 414.2"/></g></svg>
