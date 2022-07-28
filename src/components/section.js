@@ -18,15 +18,15 @@ const Section = ({ blok }) => {
   }, []);
 
   return (
-    <div {...storyblokEditable(blok)} key={blok._uid} className={clsx(sectionStyles.section, 'main-sections')} id={blok.id} style={child}>
-        {/* <span className={clsx(sectionStyles.sectionBg)} style={blok.background_image ? {backgroundImage: "url(" + blok.background_image.filename + ")"} : {backgroundImage:"none"}}></span> */}
-        {/* <span><Window /></span> */}
-        {sectionId === 'intro' ? <HomeBg /> : <></>}
-        <div>
-            {blok.content.map((blok) => (
-                <StoryblokComponent blok={blok} props={sectionId} />
-            ))}
-        </div>
+    <div className={clsx(blok.id, 'animation-wrap to-right')}>
+      <div {...storyblokEditable(blok)} key={blok._uid} className={clsx(sectionStyles.section, 'main-sections')} id={blok.id}>
+          {sectionId === 'intro' ? <HomeBg /> : <></>}
+          <div>
+              {blok.content.map((blok) => (
+                  <StoryblokComponent blok={blok} props={sectionId} />
+              ))}
+          </div>
+      </div>
     </div>
   );
 };

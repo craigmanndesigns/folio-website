@@ -53,7 +53,7 @@
     "build": "gatsby build",
     "develop": "ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
-    "start": "gatsby develop",
+    "start": "ENABLE_GATSBY_REFRESH_ENDPOINT=true gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
