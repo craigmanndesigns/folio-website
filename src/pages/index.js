@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
     <Layout>
-      <button onClick={() => setPopup(true)} >open</button>
+      <button onClick={() => setPopup(true)} className="menu-btn" >open</button>
       <div {...storyblokEditable(story.content)}>
         {components}
       </div>

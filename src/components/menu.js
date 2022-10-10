@@ -6,7 +6,7 @@ const Menu = ({props, setPopup}) => {
     <nav>
       <div className={props ? "menubg overlay" : "menubg"}></div>
       <div className={props ? "menu overlay" : "menu"}>
-        <button onClick={() => setPopup(false)} >open</button>
+        <button onClick={() => setPopup(false)}>close</button>
         <ul className="menu-content">
           <a href="/"><li>Home</li></a>
           <a href="#"><li>Work</li></a>
