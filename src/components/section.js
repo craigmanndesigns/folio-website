@@ -6,7 +6,10 @@ import useWindowSize from "../hooks/useWindowSize";
 import clsx from 'clsx';
 
 import HomeBg from "./home_bg";
-import WorkBG from "./work_bg";
+import WorkBg from "./work_bg";
+import ExpBg from "./exp_bg";
+import InterestBg from "./interest_bg"
+// import ContactBg from "./contact_bg"
 
 const Section = ({ blok }) => {
   const { width, height } = useWindowSize();
@@ -22,15 +25,24 @@ const Section = ({ blok }) => {
       return(<HomeBg />)
     }
     if (sectionId === 'work') {
-      return(<WorkBG />)
+      return(<WorkBg />)
     }
+    if (sectionId === 'experience') {
+      return(<ExpBg />)
+    }
+    if (sectionId === 'interests') {
+      return(<InterestBg />)
+    }
+    // if (sectionId === 'get_in_touch') {
+    //   return(<ContactBg />)
+    // }
     else {
       <></>
     }
   }
 
   return (
-    <div className={clsx(blok.id, 'animation-wrap to-right')}>
+    <div className={clsx(sectionId === 'get_in_touch' ? sectionId : sectionId + ' animation-wrap to-right')}>
       <div {...storyblokEditable(blok)} key={blok._uid} className={clsx(sectionStyles.section, 'main-sections')} id={blok.id}>
           {renderBG()}
           <div className={clsx('section')}>

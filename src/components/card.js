@@ -7,7 +7,7 @@ import clsx from 'clsx';
 
 const Card = ({ blok }) => {
 return (
-	<div {...storyblokEditable(blok)} key={blok._uid} className={clsx(cardStyles.card)}>
+	<div {...storyblokEditable(blok)} key={blok._uid} className={clsx(cardStyles.card, 'card')}>
 		<div className={clsx(cardStyles.cardImage)} style={{'background-image':`url(${blok.image.filename})`}}>
 		</div>
 		<div className={clsx(cardStyles.cardContent)}>

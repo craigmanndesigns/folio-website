@@ -8,5 +8,5 @@
 <rect x="431.5" y="450.71" width="88" height="4" transform="rotate(-60 431.5 450.71)" fill="#939393"/>
 <rect x="589.5" y="467.5" width="2" height="181.971" fill="#939393"/>
 <rect x="309.5" y="467.5" width="2" height="181.971" fill="#939393"/>
-<path d="M5.31936e-06 449.131L0 0L475.468 374.921L431.468 451.132L5.31936e-06 449.131Z" fill="white"/>
+<path id="laptop-light" d="M5.31936e-06 449.131L0 0L475.468 374.921L431.468 451.132L5.31936e-06 449.131Z" fill="white"/>
 </svg>

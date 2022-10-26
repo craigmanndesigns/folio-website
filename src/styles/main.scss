@@ -159,9 +159,65 @@ p {
     &.work {
         position: absolute;
         bottom: 0;
-        width: 100%;
+        left: -100px;
+        width: 600px;
+        height: 656px;
+        background: url('https://a.storyblok.com/f/162811/x/b6a7c51403/table_sprite_2.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 0 50%;
     }
+    &.interests {
+        width: 100%;
+        height: 100%;
+        background: #4A4A4B url("https://a.storyblok.com/f/162811/x/7d36a44cdf/interest_bg.svg") center/cover no-repeat;
+        position: relative;
+        & .foreground {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            background: url("https://a.storyblok.com/f/162811/x/ce2cfe2138/interest_fg.svg") center/cover no-repeat;
+        }
+        & .bigfoot {
+            position: absolute;
+            bottom: 0;
+            width: 128px;
+            height: 160px;
+            z-index: 99;
+            background: url("https://a.storyblok.com/f/162811/x/fd0648f2d0/bigfoot_sprite_2.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0 50%;
+        }
+        & .ufo {
+            position: absolute;
+        }
+    }
+    
 }
+.hanging-light {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    left: -33%;
+    top: -18%;
+    display: flex;
+}
+.bookshelf {
+    position: absolute;
+    width: 560px;
+    height: 600px;
+    left: 15%;
+    bottom: 0;
+    display: flex;
+    background: url("https://a.storyblok.com/f/162811/x/0a0cc35698/bookshelf-sprite.svg") no-repeat;
+    background-size: cover;
+    background-position: 0 50%;
+}
+#work {overflow: hidden;}
   .section-layout > div {  
     position: relative;
     height: 0vh;
@@ -197,4 +253,21 @@ p {
 .menu-btn {
     position: fixed;
     z-index: 999;
+}
+
+.final {
+    display: block;
+    height: 100vh;
+    & .contact {
+        width: 100%;
+        height: 100%;
+        background: url("https://a.storyblok.com/f/162811/x/91bf1547b5/oujia_bg.svg");
+        background-size: cover;
+        position: relative;
+        & .planchette {
+            position: absolute;
+            max-width: 20%;
+            bottom:0;
+        }
+    }
 }
