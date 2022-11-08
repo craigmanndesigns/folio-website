@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?><svg id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1461.14 976.77">
   <defs>
     <style>
-      .cls-1 {
-        fill: none;
-      }
-
-      .cls-2 {
+      .clippath {
         clip-path: url(#clippath);
       }
 
-      .cls-3 {
+      .white {
         fill: #fff;
       }
     </style>
@@ -19,17 +15,17 @@
   </defs>
   <g id="Layer_2-2">
     <g id="window">
-      <polygon id="pane" class="cls-3" points="215.25 91.79 215.25 245.94 138.74 245.04 138.74 59.52 215.25 91.79" />
-      <polygon id="pane-2" class="cls-3" points="124.07 53.2 124.07 244.36 0 243.23 0 0 124.07 53.2" />
-      <polygon id="pane-3" class="cls-3" points="215.25 254.71 215.25 410.6 138.74 443.36 138.74 255.95 215.25 254.71" />
-      <polygon id="pane-4" class="cls-3" points="124.07 256.01 124.07 449.18 0 502.08 0 257.17 124.07 256.01" />
+      <polygon id="pane" class="white" points="215.25 91.79 215.25 245.94 138.74 245.04 138.74 59.52 215.25 91.79" />
+      <polygon id="pane-2" class="white" points="124.07 53.2 124.07 244.36 0 243.23 0 0 124.07 53.2" />
+      <polygon id="pane-3" class="white" points="215.25 254.71 215.25 410.6 138.74 443.36 138.74 255.95 215.25 254.71" />
+      <polygon id="pane-4" class="white" points="124.07 256.01 124.07 449.18 0 502.08 0 257.17 124.07 256.01" />
     </g>
     <g id="mask">
-      <g class="cls-2">
-        <polygon id="light" class="cls-3" points="212.87 410.82 228.38 414.2 228.38 600.56 1461.14 923 1461.14 996.77 5.04 996.77 5.04 498.34 212.87 410.82" />
+      <g class="clippath">
+        <polygon id="light" class="white" points="212.87 410.82 228.38 414.2 228.38 600.56 1461.14 923 1461.14 996.77 5.04 996.77 5.04 498.34 212.87 410.82" />
       </g>
     </g>
-    <polygon id="sill" class="cls-3" points="228.38 414.2 4.42 517.71 -1.5 502.08 214.25 410.6 228.38 414.2" />
-    <polygon id="side" class="cls-3" points="228.38 414.2 228.38 83.85 214.25 91.79 214.25 410.6 228.38 414.2" />
+    <polygon id="sill" class="white" points="228.38 414.2 4.42 517.71 -1.5 502.08 214.25 410.6 228.38 414.2" />
+    <polygon id="side" class="white" points="228.38 414.2 228.38 83.85 214.25 91.79 214.25 410.6 228.38 414.2" />
   </g>
 </svg>

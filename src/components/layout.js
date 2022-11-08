@@ -79,12 +79,12 @@ const Layout = ({ children }) => {
       }
     });
     function directionalSnap(increment) {
-        let snapFunc = gsap.utils.snap(increment);
-        return (raw, self) => {
-          let n = snapFunc(raw);
-          return Math.abs(n - raw) < 1e-4 || (n < raw) === self.direction < 0 ? n : self.direction < 0 ? n - increment : n + increment;
-        };
-      }
+      let snapFunc = gsap.utils.snap(increment);
+      return (raw, self) => {
+        let n = snapFunc(raw);
+        return Math.abs(n - raw) < 1e-4 || (n < raw) === self.direction < 0 ? n : self.direction < 0 ? n - increment : n + increment;
+      };
+    }
 
   }, []);
 
@@ -111,8 +111,15 @@ const Layout = ({ children }) => {
 
     // </div>
     <>
+      <div className="section-nav" style={{ width: width }}>
+        <a href="#intro"><button className={clsx(buttonStyles.buttonTertiary)}>Intro</button></a>
+        <a href="#work"><button className={clsx(buttonStyles.buttonTertiary)}>Work</button></a>
+        <a href="#experience"><button className={clsx(buttonStyles.buttonTertiary)}>Experience</button></a>
+        <a href="#interests"><button className={clsx(buttonStyles.buttonTertiary)}>Interests</button></a>
+        <a href="#get_in_touch"><button className={clsx(buttonStyles.buttonTertiary)}>Get in touch</button></a>
+      </div>
       <div className="section-layout">{children}</div>
-        <div className="final">
+      <div className="final">
         <ContactBg />
       </div>
     </>

@@ -20,16 +20,16 @@ const InterestBg = ({ }) => {
     let intT = gsap.timeline({
       scrollTrigger: {
         trigger: "#interests",
-        start: "bottom bottom-=" + (scrollPos + 100) + "px",
-        end: "bottom top-=" + (scrollPos + 200) + "px",
+        start: "bottom bottom-=" + (scrollPos + 200) + "px",
+        end: "bottom top-=" + (scrollPos + 400) + "px",
         scrub: true,
-        // markers: true,
+        markers: true,
       }
     })
     intT.to(".bigfoot", { backgroundPosition: (-offset_value * frame_count * 2) + "px 50%", ease: "steps(" + frame_count + ")", left: "95%", },".ufo", {scale:1, translateX:"100%", translateY:0}, 0)
 
-    intT.to(".ufo", {scale:1.3, left:"20%", top:"10%"}, 0)
-    intT.to(".ufo", {scale:0, left:"100%", top:"0%"}, ">")
+    intT.to(".ufo", {scale:1.3, left:"20%", top:"10%", opacity: 1}, 0)
+    intT.to(".ufo", {scale:0, left:"100%", top:"0%", opacity: 0}, ">")
   }, [height])
   
 

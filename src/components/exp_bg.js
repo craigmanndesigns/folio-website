@@ -16,24 +16,21 @@ const ExpBg = ({ }) => {
     let expT = gsap.timeline({
       scrollTrigger: {
         trigger: "#experience",
-        start: "bottom bottom-=" + (height + 100) + "px",
-        end: "bottom top-=" + (height + 200) + "px",
+        start: "bottom bottom-=" + (height - 50) + "px",
+        end: "bottom top-=" + (height) + "px",
         scrub: true,
-        markers: true,
+        // markers: true,
       }
     })
     expT.to(".h-light-beam", { opacity: 1 })
     expT.to(".h-light-beam", { opacity: 0 })
-    expT.to(".h-light-beam", { opacity: 1 })
-    expT.to(".h-light-beam", { opacity: 0 })
-    expT.to(".h-light-beam", { opacity: 1 })
     expT.to(".h-light-beam", { opacity: 1 })
     expT.to(".h-light-beam", { opacity: 1 })
     expT.to(".bookshelf", {
       backgroundPosition: (-offset_value * frame_count * 2) + "px 50%",
       duration: 2,
       ease: "steps(" + frame_count + ")",
-    }, 0)
+    }, 1)
   }, [height])
 
   return (
